@@ -1,0 +1,4 @@
+\ProvidesFile{eu2inconsolata.fd}[2010/05/21 v0.0 Font defs for inconsolata LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{inconsolata}{}
+\DeclareFontShape {EU2}{inconsolata}{m}{n}   { <-> "Inconsolata.ttf:+tlig;+tsub;+liga;+rlig;"}{}

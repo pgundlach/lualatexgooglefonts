@@ -1,0 +1,4 @@
+\ProvidesFile{eu2reeniebeanie.fd}[2010/05/21 v0.0 Font defs for reeniebeanie LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{reeniebeanie}{}
+\DeclareFontShape {EU2}{reeniebeanie}{m}{n}   { <-> "ReenieBeanie.ttf:+tlig;+tsub;+liga;+rlig;"}{}

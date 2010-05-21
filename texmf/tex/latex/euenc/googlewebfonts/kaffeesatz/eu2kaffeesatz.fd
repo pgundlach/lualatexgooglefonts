@@ -1,0 +1,9 @@
+\ProvidesFile{eu2kaffeesatz.fd}[2010/05/21 v0.0 Font defs for kaffeesatz LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{kaffeesatz}{}
+\DeclareFontShape {EU2}{kaffeesatz}{m}{n}   { <-> "YanoneKaffeesatz-Regular.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{kaffeesatz}{bx}{n}   { <-> "YanoneKaffeesatz-Bold.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{kaffeesatz}{l}{n}   { <-> "YanoneKaffeesatz-Light.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{kaffeesatz}{el}{n}   { <-> "YanoneKaffeesatz-Thin.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+
+% Todo: is light and thin usable from LaTeX's point of view?

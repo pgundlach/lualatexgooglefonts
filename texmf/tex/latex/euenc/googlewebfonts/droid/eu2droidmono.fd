@@ -1,0 +1,5 @@
+\ProvidesFile{eu2droidmono.fd}[2010/05/21 v0.0 Font defs for droid mono LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{droidmono}{}
+\DeclareFontShape {EU2}{droidmono}{m}{n}   { <-> "DroidSansMono.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+

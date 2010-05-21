@@ -1,0 +1,5 @@
+\ProvidesFile{eu2droidsans.fd}[2010/05/21 v0.0 Font defs for droid sans LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{droidsans}{}
+\DeclareFontShape {EU2}{droidsans}{m}{n}   { <-> "DroidSans.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{droidsans}{bx}{n}   { <-> "DroidSans-Bold.ttf:+tlig;+tsub;+liga;+rlig;"}{}

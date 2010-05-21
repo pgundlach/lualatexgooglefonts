@@ -1,0 +1,7 @@
+\ProvidesFile{eu2fellgp.fd}[2010/05/21 v0.0 Font defs for fell Great Primer LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{fellgp}{}
+\DeclareFontShape {EU2}{fellgp}{m}{n}   { <-> "IMFeGPrm28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{fellgp}{m}{it}  { <-> "IMFeGPit28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{fellgp}{m}{sc}  { <-> "IMFeGPsc28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+

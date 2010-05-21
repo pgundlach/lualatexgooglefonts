@@ -1,0 +1,4 @@
+\ProvidesFile{eu2crimson.fd}[2010/05/21 v0.0 Font defs for crimson LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{crimson}{}
+\DeclareFontShape {EU2}{crimson}{m}{n}   { <-> "crimson_text_roman.ttf:+tlig;+tsub;+liga;+rlig;"}{}

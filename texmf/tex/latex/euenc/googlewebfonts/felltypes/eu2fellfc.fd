@@ -1,0 +1,7 @@
+\ProvidesFile{eu2fellfc.fd}[2010/05/21 v0.0 Font defs for fell French Canon LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{fellfc}{}
+\DeclareFontShape {EU2}{fellfc}{m}{n}   { <-> "IMFeFCrm28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{fellfc}{m}{it}  { <-> "IMFeFCit28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{fellfc}{m}{sc}  { <-> "IMFeFCsc28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+

@@ -1,0 +1,4 @@
+\ProvidesFile{eu2tangerine.fd}[2010/05/21 v0.0 Font defs for tangerine LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{tangerine}{}
+\DeclareFontShape {EU2}{tangerine}{m}{n}   { <-> "Tangerine.ttf:+tlig;+tsub;+liga;+rlig;"}{}

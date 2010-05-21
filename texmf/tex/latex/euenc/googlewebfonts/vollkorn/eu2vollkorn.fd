@@ -1,0 +1,5 @@
+\ProvidesFile{eu2vollkorn.fd}[2010/05/21 v0.0 Font defs for vollkorn LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{vollkorn}{}
+\DeclareFontShape {EU2}{vollkorn}{m}{n}   { <-> "Vollkorn-Regular.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{vollkorn}{bx}{n}   { <-> "Vollkorn-Bold.ttf:+tlig;+tsub;+liga;+rlig;"}{}

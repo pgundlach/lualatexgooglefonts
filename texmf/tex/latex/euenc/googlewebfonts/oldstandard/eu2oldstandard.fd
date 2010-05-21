@@ -1,0 +1,7 @@
+\ProvidesFile{eu2oldstandard.fd}[2010/05/21 v0.0 Font defs for oldstandard LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{oldstandard}{}
+\DeclareFontShape {EU2}{oldstandard}{m}{n}   { <-> "OldStandard-Regular.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{oldstandard}{bx}{n}   { <-> "OldStandard-Bold.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{oldstandard}{m}{it}   { <-> "OldStandard-Italic.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+

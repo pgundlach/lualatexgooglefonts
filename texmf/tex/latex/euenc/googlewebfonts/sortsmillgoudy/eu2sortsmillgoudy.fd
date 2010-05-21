@@ -1,0 +1,5 @@
+\ProvidesFile{eu2sortsmillgoudy.fd}[2010/05/21 v0.0 Font defs for sortsmillgoudy LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{sortsmillgoudy}{}
+\DeclareFontShape {EU2}{sortsmillgoudy}{m}{n}   { <-> "OFLGoudyStMTT.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{sortsmillgoudy}{m}{it}   { <-> "OFLGoudyStMTT-Italic.ttf:+tlig;+tsub;+liga;+rlig;"}{}

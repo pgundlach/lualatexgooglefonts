@@ -1,0 +1,4 @@
+\ProvidesFile{eu2lobster.fd}[2010/05/21 v0.0 Font defs for lobster LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{lobster}{}
+\DeclareFontShape {EU2}{lobster}{m}{n}   { <-> "Lobster.ttf:+tlig;+tsub;+liga;+rlig;"}{}

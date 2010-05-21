@@ -1,0 +1,8 @@
+\ProvidesFile{eu2nobile.fd}[2010/05/21 v0.0 Font defs for nobile LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{nobile}{}
+\DeclareFontShape {EU2}{nobile}{m}{n}   { <-> "Nobile002.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{nobile}{bx}{n}   { <-> "Nobile-bold002.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{nobile}{n}{it}   { <-> "Nobile-italic002.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{nobile}{bx}{it}   { <-> "Nobile-bold-italic002.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+

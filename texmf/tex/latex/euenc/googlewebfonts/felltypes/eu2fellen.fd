@@ -1,0 +1,6 @@
+\ProvidesFile{eu2fellen.fd}[2010/05/21 v0.0 Font defs for fell English LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{fellen}{}
+\DeclareFontShape {EU2}{fellen}{m}{n}   { <-> "IMFeENrm28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{fellen}{m}{it}  { <-> "IMFeENit28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{fellen}{m}{sc}  { <-> "IMFeENsc28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}

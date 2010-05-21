@@ -1,0 +1,4 @@
+\ProvidesFile{eu2cardo.fd}[2010/05/21 v0.0 Font defs for cardo LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{cardo}{}
+\DeclareFontShape {EU2}{cardo}{m}{n}   { <-> "Cardo98s.ttf:+tlig;+tsub;+liga;+rlig;"}{}

@@ -1,0 +1,7 @@
+\ProvidesFile{eu2felldp.fd}[2010/05/21 v0.0 Font defs for fell Double Pica LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{felldp}{}
+\DeclareFontShape {EU2}{felldp}{m}{n}   { <-> "IMFeDPrm28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{felldp}{m}{it}  { <-> "IMFeDPit28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{felldp}{m}{sc}  { <-> "IMFeDPsc28P.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+

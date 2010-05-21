@@ -1,0 +1,8 @@
+\ProvidesFile{eu2droidserif.fd}[2010/05/21 v0.0 Font defs for droid serif LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{droidserif}{}
+\DeclareFontShape {EU2}{droidserif}{m}{n}   { <-> "DroidSerif-Regular.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{droidserif}{m}{it}  { <-> "DroidSerif-Italic.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{droidserif}{bx}{n}   { <-> "DroidSerif-Bold.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{droidserif}{bx}{it}  { <-> "DroidSerif-BoldItalic.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+

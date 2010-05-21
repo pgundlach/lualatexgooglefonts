@@ -1,0 +1,5 @@
+\ProvidesFile{eu2cantarell.fd}[2010/05/21 v0.0 Font defs for cantarell LuaTeX's EU2 encoding]
+
+\DeclareFontFamily{EU2}{cantarell}{}
+\DeclareFontShape {EU2}{cantarell}{m}{n}   { <-> "Cantarell-Regular.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{cantarell}{m}{sl}  { <-> "Cantarell-Oblique.ttf:+tlig;+tsub;+liga;+rlig;"}{}
