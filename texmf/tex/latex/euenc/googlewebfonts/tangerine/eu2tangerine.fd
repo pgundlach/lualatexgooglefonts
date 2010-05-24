@@ -1,4 +1,12 @@
-\ProvidesFile{eu2tangerine.fd}[2010/05/21 v0.0 Font defs for tangerine LuaTeX's EU2 encoding]
+\ProvidesFile{eu2tangerine.fd}[2010/05/22 v0.1 Font defs for tangerine LuaTeX's EU2 encoding (Nm)]
+
+\expandafter\ifx\csname gftangerine@scale\endcsname\relax
+   \let\gftangerine@@scale\@empty%
+\else
+   \edef\gftangerine@@scale{s*[\csname gftangerine@scale\endcsname]}%
+\fi
 
 \DeclareFontFamily{EU2}{tangerine}{}
-\DeclareFontShape {EU2}{tangerine}{m}{n}   { <-> "Tangerine.ttf:+tlig;+tsub;+liga;+rlig;"}{}
+\DeclareFontShape {EU2}{tangerine}{m}{n} { <-> \gftangerine@@scale file:Tangerine.ttf:\gftangerine@param}{}
+
+\endinput

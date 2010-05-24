@@ -1,0 +1,55 @@
+\ProvidesPackage{tangerine}[2010/05/22 Package for the Font Tangerine (Nm)]
+%
+\RequirePackage{keyval,ifluatex}
+%
+\def\gftangerine@scale{1}%      scale factor
+\def\gftangerine@default{0}%    default, rmdefault, sfdefault
+\def\gftangerine@param{mode=node;script=latn;+liga;}% feature parameter
+%
+\define@key{gftangerine}{scaled}[1]{\def\gftangerine@scale{#1}}
+\define@key{gftangerine}{default}[0]{\def\gftangerine@default{0}}
+\define@key{gftangerine}{rmdefault}[true]{\def\gftangerine@default{1}}
+\define@key{gftangerine}{sfdefault}[true]{\def\gftangerine@default{2}}
+\define@key{gftangerine}{param}[]{\def\gftangerine@param{#1}}
+
+\def\ProcessOptionsWithKV#1{%
+  \let\@tempc\relax
+  \let\gftangerine@tempa\@empty
+  \@for\CurrentOption:=\@classoptionslist\do{%
+    \@ifundefined{KV@#1@\CurrentOption}%
+    {}%
+    {%
+      \edef\gftangerine@tempa{\gftangerine@tempa,\CurrentOption,}%
+      \@expandtwoargs\@removeelement\CurrentOption
+        \@unusedoptionlist\@unusedoptionlist
+    }%
+  }%
+  \edef\gftangerine@tempa{%
+    \noexpand\setkeys{#1}{%
+      \gftangerine@tempa\@ptionlist{\@currname.\@currext}%
+    }%
+  }%
+  \gftangerine@tempa
+  \let\CurrentOption\@empty
+}
+\ProcessOptionsWithKV{gftangerine}
+\AtEndOfPackage{%
+  \let\@unprocessedoptions\relax
+}
+%
+\ifluatex
+   \RequirePackage{luaotfload}
+   \ifcase\gftangerine@default% default
+      % do nothing
+   \or% rmdefault
+      \renewcommand\rmdefault{tangerine}%
+   \or% sfdefault
+      \renewcommand\sfdefault{tangerine}%
+   \fi
+   \def\gftangerine{\fontfamily{tangerine}\selectfont}
+
+\else
+   \PackageWarning{tangerine}{Only für lualatex!}
+\fi
+%
+\endinput
