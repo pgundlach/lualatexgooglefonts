@@ -1,0 +1,57 @@
+% LaTeX-Package for cardo
+%
+\ProvidesPackage{cardo}[2010/05/22 Google-Font cardo]
+%
+\RequirePackage{keyval,ifluatex}
+%
+\def\gfcardo@scale{1}%      scale factor
+\def\gfcardo@default{0}%    default, rmdefault, sfdefault
+\def\gfcardo@param{mode=node;script=latn;+liga;}% feature parameter
+%
+\define@key{gfcardo}{scaled}[1]{\def\gfcardo@scale{#1}}
+\define@key{gfcardo}{default}[0]{\def\gfcardo@default{0}}
+\define@key{gfcardo}{rmdefault}[true]{\def\gfcardo@default{1}}
+\define@key{gfcardo}{sfdefault}[true]{\def\gfcardo@default{2}}
+\define@key{gfcardo}{param}[]{\def\gfcardo@param{#1}}
+
+\def\ProcessOptionsWithKV#1{%
+  \let\@tempc\relax
+  \let\gfcardo@tempa\@empty
+  \@for\CurrentOption:=\@classoptionslist\do{%
+    \@ifundefined{KV@#1@\CurrentOption}%
+    {}%
+    {%
+      \edef\gfcardo@tempa{\gfcardo@tempa,\CurrentOption,}%
+      \@expandtwoargs\@removeelement\CurrentOption
+        \@unusedoptionlist\@unusedoptionlist
+    }%
+  }%
+  \edef\gfcardo@tempa{%
+    \noexpand\setkeys{#1}{%
+      \gfcardo@tempa\@ptionlist{\@currname.\@currext}%
+    }%
+  }%
+  \gfcardo@tempa
+  \let\CurrentOption\@empty
+}
+\ProcessOptionsWithKV{gfcardo}
+\AtEndOfPackage{%
+  \let\@unprocessedoptions\relax
+}
+%
+\ifluatex
+   \RequirePackage{luaotfload}
+   \ifcase\gfcardo@default% default
+      % do nothing
+   \or% rmdefault
+      \renewcommand\rmdefault{cardo}%
+   \or% sfdefault
+      \renewcommand\sfdefault{cardo}%
+   \fi
+   \def\gfcardo{\fontfamily{cardo}\selectfont}
+
+\else
+   \PackageWarning{cardo}{Only für lualatex!}
+\fi
+%
+\endinput
